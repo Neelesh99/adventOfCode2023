@@ -17,12 +17,12 @@ fun main(args: Array<String>) {
 }
 
 fun findRoots(a: Double, b: Double, c: Double) : Pair<Int, Int> {
-    val descriminnant = b*b - 4*a*c
-    if (descriminnant < 0) {
+    val descriminant = b*b - 4*a*c
+    if (descriminant < 0) {
         return 0 to 0
     }
-    val sol1 = (-1*b - Math.pow(descriminnant, 0.5)) / 2*a
-    val sol2 = (-1*b + Math.pow(descriminnant, 0.5)) / 2*a
+    val sol1 = (-1*b - Math.pow(descriminant, 0.5)) / 2*a
+    val sol2 = (-1*b + Math.pow(descriminant, 0.5)) / 2*a
     return Math.ceil(sol1).toInt() to Math.floor(sol2).toInt()
 }
 
